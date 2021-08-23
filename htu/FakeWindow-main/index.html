@@ -1,0 +1,21 @@
+<script>if (typeof module === 'object') {window.module = module; module = undefined}</script>
+<script src="./jquery.js" type="text/javascript"></script>
+<script src="./jquery-ui.js" type="text/javascript"></script>
+<script src="./fake_window.js" type="text/javascript"></script>
+<script>if (window.module) module = window.module;</script>
+<button id="win">open</button><br />
+<input id="url" placeholder="https://google.com/?igu=1"/>
+<script type="text/javascript">
+    let windowUrl = "https://google.com/?igu=1"
+    let domain = windowUrl.split("/")[2] // this is simply anything between https:// and the slash after the domain name.
+    let domain_params
+    if (windowUrl.split("/")[3] != undefined) domain_params = "/" + windowUrl.split("/")[3] // anything after the TLD is the GOAL, however at the moment i never actually implemented anything beyond the first / sooo kinda broken. TODO implement full url path.
+    document.getElementById("url").onblur = function() { // simply redefines the variables when the user changes them.
+        windowUrl = document.getElementById("url").value
+        domain = windowUrl.split("/")[2]
+        if (windowUrl.split("/")[3] != undefined) domain_params = "/" + windowUrl.split("/")[3]
+    }
+    let win = new FakeWindow() // FakeWindow is the class used to generate these fake windows.
+    win.bind(['button'])
+    win.init()
+</script>
