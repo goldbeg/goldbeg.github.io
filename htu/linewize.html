@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SineWize</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300, 400");
+      @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+      iframe {
+        position:absolute;
+        top:-150px;
+        border:none;
+      }
+      body {
+        background-color: #935d8c;
+        background-image: url(https://optifinesource.co.uk/assets/img/overlay.png), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+        font-weight: 300;
+        background-attachment: fixed;
+      }
+      html,*{
+        color: white;
+        border-color: white;
+        background-color:rgba(0,0,0,0);
+        transition: .3s ease-out;
+        outline:none;
+      }
+      div {
+        border: 1px solid white;
+        border-radius:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="iframe" src="https://autologout.linewize.net/"></iframe>
+    <h1>This Is SineWize Home Page!</h1>
+    <p>Keep me open for unblock</p>
+  </body>
+  <script type="text/javascript">
+    function test() {
+      document.getElementById('iframe').src="https://autologout.linewize.net/?"+new Date().getTime();
+      setTimeout(function(){test()},2000);
+    }
+    test();
+  </script>
+</html>
