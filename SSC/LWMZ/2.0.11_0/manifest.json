@@ -1,0 +1,32 @@
+{
+   "background": {
+      "scripts": [ "background/util/easyFetch.js", "background/util/retryAsync.js", "background/p2p/P2PManager.js", "background/p2p/ScreenshotPersister.js", "background/p2p/SnapshotStreamer.js", "background/p2p/TabStreamer.js", "background/vendor/_linewize_/p2p-utils.js", "background/vendor/luxon/luxon.js", "background/vendor/linkify/linkify.js", "background/vendor/linkify/linkify-html.js", "background/util/logging.js", "background/util/util.js", "background/store/verdictResponseStore.js", "background/stats/stats.js", "background/stats/connections.js", "background/events/tabs.js", "background/events/chat.js", "background/config/configuration.js", "background/config/scheduledConfigFetcher.js", "background/events/messaging.js", "background/events/events.js", "background/filtering/filtering.js", "background/login/login.js", "background/login/authenticate.js", "background/main.js" ]
+   },
+   "browser_action": {
+      "default_icon": "popup/icon.png",
+      "default_popup": "popup/index.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "background/filtering/content.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Connect for Chrome - Education provides visibility into student internet access in the classroom.",
+   "icons": {
+      "192": "/background/events/message_scripts/icon-192.png",
+      "512": "/background/events/message_scripts/icon-512.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhFQmiR4hV3OnuBzARGbmvyJ+Xfy3XItqhRJRMQPU7vzgs7wfLWDT3m3U4mH6Jp2g+jAawX2bsATUiGc3q06AiOtttAioO1JO6dNNRa9nfMH6sAeydfUeUpBdbygdW1UaqhdB5BD/42bS2pVvU/gbS4oUP6ZywZwE+WDAAY5GemZACHIlt3pw2cbms1YZAiGiK4cY8q2hY8SXfGb0+QGpsd2VEwEaSwgMN7Pp7gSWEdOdleP1QwBRT7jE1gnmlmTB8EZJ3hXtTZKOjmXSGn5OgBlQ1fjQWBhS3skd9k7DDTgF5BqfsuQGO9u7SZNmc08Q0zQFwnZPgLYvppeiWPXcXQIDAQAB",
+   "manifest_version": 2,
+   "name": "Connect for Chrome - Education",
+   "oauth2": {
+      "client_id": "474789183549-2jbl8gn6gik3pho11dlcdcllb22ab4vm.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/userinfo.email" ]
+   },
+   "permissions": [ "\u003Call_urls>", "tabs", "identity", "storage", "identity.email", "webRequest", "webRequestBlocking", "unlimitedStorage", "idle" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.11",
+   "web_accessible_resources": [ "/background/events/message_scripts/Close.svg", "/background/filtering/default-blocked.html", "/background/events/message_scripts/bubble.svg", "/background/events/message_scripts/iconAvatar.svg", "/background/events/message_scripts/iconCloseBlack.svg", "/background/events/message_scripts/paper-plane-solid.svg", "/background/events/message_scripts/pendo.png", "/background/events/message_scripts/beta.svg", "/background/events/message_scripts/closePendo.svg" ]
+}

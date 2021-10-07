@@ -1,0 +1,83 @@
+.LinewizeMessageElement {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 32px;
+    color: #FFF;
+    margin-top: 0px;
+    min-height: unset;
+    height: unset;
+    font-size: 12px;
+    font-family: Lato, Arial, Helvetica, Arial, monospace;
+    background-color: rgba(74,74,74,0.95);
+    transition: background-color 1s, opacity 1s, margin-left 1s ease-in-out;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LinewizeMessageElement_time {
+    float: left;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.LinewizeMessageElement_text {
+    word-wrap: break-word;
+    width: calc(100% - 150px);
+    display: inline-block;
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 16px;
+}
+
+.LinewizeMessageElement_closeButton {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.LinewizeMessageElement_closeButton:hover {
+    opacity: 100%;
+}
+
+.LinewizeCloseTabMessage_closeButton {
+    margin-left: auto;
+    cursor: pointer;
+    opacity: 60%;
+    width: 30px;
+}
+
+.LinewizeCloseTabMessage_closeButton:hover {
+    opacity: 100%;
+}
+
+.LinewizeMessageElement--new {
+    margin-left: -100%;
+    background-color:rgba(74,74,74,0);
+}
+
+.LinewizeCloseTabMessage_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.LinewizeCloseTabMessage_faviconContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    margin-left: auto;
+}
+
+.LinewizeCloseTabMessage_favicon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.LinewizeCloseTabMessage_text {
+    opacity: 1.0;
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+}

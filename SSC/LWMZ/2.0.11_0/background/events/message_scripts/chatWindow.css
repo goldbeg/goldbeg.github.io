@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('Roboto-Regular.ttf');
+}
+
+.chatWindow {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    bottom: 53px;
+}
+
+.chatHeader {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.classroomName {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Roboto, "Open Sans";
+    margin-left: 12px;
+    height: 26px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chatMessagePane {
+    width: 100%;
+}
+
+.sendStatusContainer {
+    display:flex;
+    align-items:center;
+}
+
+.ClassroomChatroom_information {
+    display: block;
+    text-align: center;
+    padding: 48px 36px;    
+    max-height: 100%;
+    max-width: 100%;
+    font-size: 15px;
+}
+
+.ClassroomChatroom_rowContainer {
+    background-color: white;
+    border: none;
+    display: block;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 62px;
+    width: 100%;
+}
+
+.ClassroomChatroom_rowContainer:hover {
+    background-color: #EDEDED;
+}
+
+.ClassroomChatroom_rowContainer:focus, .ClassroomChatroom_rowContainer:active {
+    outline: none;
+}
+
+.ClassroomChatroom_textAreaContainer {
+    border: 1px solid #e7e7e7;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    outline: none;
+    height:max-content;
+    resize: none;
+    width: 100%;
+}
+
+.ClassroomChatroom_textArea {
+    border: none;
+    background-color: #FFFFFF;
+    max-height: 48px;
+    outline: none;
+    padding: 0;
+    padding-right: 3px;
+    width: 100%;
+    resize: none;
+    word-wrap: break-word;
+    font-size: 14px;
+    font-family: Roboto, "Open Sans";
+    font-weight: 400;
+    overflow-y: auto ! important;
+}
+
+.ClassroomChatroom_textAreaContainer:focus-within {
+    border: solid 1px #1067D2;
+ }
+
+ .Classroom_rowWrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+.ClassroomChatroom_name {
+    font-size: 14px;
+    font-family: Roboto, "Open Sans";
+    font-weight: 400;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ClassroomChatroom_nameHeading {
+    font-size: 14px;
+    font-family: Roboto, "Open Sans";
+    font-weight: 400;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 7px;
+}
+
+.ClassroomChatroom_teacherHeading {
+    font-size: 12px;
+    font-family: Roboto, "Open Sans";
+    font-weight: 400;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: "#666666";
+}
+
+.ClassroomChatroom_sendStatus {
+    padding-top: 5px;
+    font-size: 12px;
+    float: right;
+    margin-right: 12px;
+    display: flex;
+}
+
+.ClassroomChatroom_classStatus {
+    font-size: 12px;
+    font-family: Roboto, "Open Sans";
+    font-weight: 400;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ClassroomChatroom_footer {
+    border: 1px solid #C1C6C8;
+    font-size: 14px;
+    text-align: center;
+    justify-self: flex-end;
+    justify-content: center;
+    height: 38px;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    background: #EAEAEA;
+    padding: 8px;
+    margin: 8px;
+}
+
+.ClassroomChat_notificationsContainer {
+    width: 6px;
+    height: 6px;
+    align-items: center;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-right: 16px;
+    color: white;
+    background-color: #009900;
+}
+
+.ClassroomChat_notificationsValue {
+    height: 0;
+    margin-top: -1.2em;
+    overflow: visible;
+    font-size: 12px;
+}
+
+.ClassroomChat_classEllipse {
+    width: 22px;
+    height: 22px;
+    align-items: center;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.25rem;
+    margin-left: 10px;
+    margin-right: 7px;
+    color: white;
+    font-size: 17px;
+    background-color: #FF9900;
+}
+
+.ClassroomChat_avatar {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.25rem;
+    color: white;
+    font-size: 12px;
+    font-family: Roboto, "Open Sans";
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.ClassroomChat_displayName {
+    margin-bottom: 8px;
+}
+
+.ClassroomChat_arrowRight {
+    border: solid #626262;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.ClassroomChat_arrowLeft {
+    border: solid #626262;
+    border-width: 2px 0 0 2px;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.ClassroomChatroom_date{
+    text-align: center;
+    font-size: 10px;
+    color: #888888;
+    margin: 10px;
+}
+
+.ClassroomChatroom_timeStamp{
+    /* padding: 5px; */
+    font-size: 10px;
+}
+
+#chatMessageConversation {
+    overflow: auto;
+    height: 100%;
+    scroll-behavior: smooth;
+    margin-bottom: 8px;
+}
+
+.chatMessageControlsPanel {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+}
+
+#sendIcon {
+    margin-left: 0.5rem;
+    width: 24px;
+    margin-right: 8px;
+}
