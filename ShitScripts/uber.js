@@ -1,7 +1,7 @@
-javascript:(function(){/* 
+/* 
   UBer v4.11 by luphoria.
 */
-/* javascript:(function() {
+/* javascript: */(function() {
   var url = prompt("\
 Welcome to UBer v4.11\n\
 enter url, the one already there is Google. make sure to start with http://, https://, or //.\n\
@@ -38,4 +38,4 @@ enter url.\
       alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.")
     }
   }
-})()});
+})()
